@@ -35,6 +35,12 @@ def remove_silence_from_video(input_video, output_video, audio_threshold=0.01, m
     # Write the result to a file
     final.write_videofile(output_video, codec='libx264', audio_codec='aac')
 
+# display start message 
+print('start')
+
 # Example usage
 remove_silence_from_video(INPUT_VIDEO, OUTPUT_VIDEO, audio_threshold=AUDIO_THREASHOLD)
+
+# display end message
+print('end')
 
